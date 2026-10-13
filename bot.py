@@ -16,7 +16,7 @@ from ollama import AsyncClient
 TELEGRAM_TOKEN = "8687731705:AAGcXYBRX_jv-MgXh855xYidump48evZosA"
 OLLAMA_API_KEY = "86d5492d5a6946eebddf1986f90a929d.Li4O2QcqB9yxC8nC96wKCI4f"
 OLLAMA_HOST    = "https://ollama.com"
-MODEL          = "gpt-oss:120b-cloud"
+MODEL          = "deepseek-v4.1-flash:cloud"
 
 DEFAULT_TRIGGER = "вась"
 
@@ -28,7 +28,7 @@ OWNER_ID = 117346464  # <-- ЗАМЕНИ
 # Дальше управляется командами /ban_add и /ban_del.
 DEFAULT_BANNED_WORDS = ["меф", "гаш", "соль", "порошок"]
 
-SYSTEM_PROMPT = "Ты полезный ассистент. Отвечай кратко и по делу на русском языке."
+SYSTEM_PROMPT = "Ты полезный ассистент. Отвечай кратко и по делу на русском языке. Отвечай с маленькой буквы"
 MAX_HISTORY = 20
 
 DB_PATH = Path("bot.db")
