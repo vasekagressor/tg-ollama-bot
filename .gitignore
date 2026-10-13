@@ -1,5 +1,4 @@
 # Секреты и локальные данные
-bot.db
 bot.db-journal
 bot.db-wal
 bot.db-shm
