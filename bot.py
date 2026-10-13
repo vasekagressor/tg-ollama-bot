@@ -6,6 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from aiogram import Bot, Dispatcher, F
+from aiogram.client.default import DefaultBotProperties
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.enums import ParseMode
@@ -39,7 +40,11 @@ logging.basicConfig(
 )
 log = logging.getLogger("vasya-bot")
 
-bot = Bot(token=TELEGRAM_TOKEN, parse_mode=ParseMode.MARKDOWN)
+bot = Bot(
+    token=TELEGRAM_TOKEN,
+    default=DefaultBotProperties(parse_mode=ParseMode.MARKDOWN),
+)
+
 dp = Dispatcher()
 
 ollama = AsyncClient(
