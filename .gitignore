@@ -1,0 +1,22 @@
+# Секреты и локальные данные
+bot.db
+bot.db-journal
+bot.db-wal
+bot.db-shm
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
